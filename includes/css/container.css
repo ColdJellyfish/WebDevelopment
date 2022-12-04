@@ -1,0 +1,30 @@
+/*  container css */
+.container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex: none;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.container.y {
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
+}
+.container > div {
+    position: relative;
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+}
+.y.mandatory-scroll-snapping {
+    scroll-snap-type: y mandatory;
+}
+.y.container > div {
+    font-size: 128px;
+    max-width: 100%;
+    height: 100vh;
+    float: left;
+}

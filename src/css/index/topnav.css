@@ -1,0 +1,65 @@
+/*  Header  
+    Navigation: Home, About, and Member
+*/
+.topnav {
+    overflow: hidden;
+    background: rgb(204, 153, 0, 0.3);
+    border-bottom: 2px solid black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size:  4vh;
+    
+}
+
+.topnav a:hover {
+    color: black;
+    text-shadow: 1px 1px orange;
+    background: rgb(204, 153, 0, 0.4);
+    transition: ease-in-out .3s;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav .flag-icon {
+    max-width: 4%;
+    margin: auto;
+    float: right;
+    filter: drop-shadow(12px 12px 4px black);
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    position: relative;
+    float: none;
+    display: flex;
+    text-align: left;
+    }
+    .topnav .flag-icon {
+        opacity: 0;
+    }
+    .nav-btn {
+        display: none;
+    }
+}

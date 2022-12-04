@@ -1,0 +1,39 @@
+/*  sticky navigation   */
+.nav-btn {
+    position: absolute;
+    top: 95vh;
+    left: 94vh;
+    height: max-content;
+    background-color: rgb(204, 153, 0, 0.4);
+    border-radius: 12px;
+    outline: 1px solid black;
+    z-index: 1;
+    filter: opacity(70%);
+    margin: 0 auto;
+    padding: 10px;
+}
+.nav-container {
+    position: relative;
+    display: inline;
+    
+}
+.nav-container div {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius:50% ;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.nav-btn a {
+    position: relative;
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+}
+.nav-btn p {
+    font-size: 10px;
+    text-align: center;
+}
